@@ -112,6 +112,13 @@ extern void otPlatUartSendDone(void);
 extern void otPlatUartReceived(const uint8_t *aBuf, uint16_t aBufLength);
 
 /**
+ * Outer component calls this method to notify UART driver that it should 
+ * switch to panic mode and work in synchronous way.
+ *
+ */
+void otPlatUartSetPanicMode(void);
+
+/**
  * @}
  *
  */
